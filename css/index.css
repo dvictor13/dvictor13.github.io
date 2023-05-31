@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --primary-color: #101010;
+    --secondary-color: #f3f3f3;
+    --terciary-color: #b9b9b9;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    position: relative;    
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header h1{
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-align: center;
+    line-height: 2rem;
+    margin: 10%;
+}
+
+header .apoio{
+    font-family: 'Major Mono Display', monospace;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.8rem;
+    margin: 2%;
+    gap: 1%;
+    width: 80%;
+}
+
+header .apoio h3{
+    flex: 1 1 auto;
+}
+
+header .contatos{
+    font-size: .8rem;
+    text-align: center;
+    color: var(--terciary-color);
+    position: absolute;
+    bottom: 50px;
+}
+
+header .contatos h4{
+    text-transform: uppercase;
+    font-size: .6rem;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    header h1{
+        margin: 2%;
+    }
+
+    header .apoio{
+        flex-direction: row;
+        max-width: 520px;
+    }
+}
+
